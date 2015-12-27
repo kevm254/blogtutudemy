@@ -8,7 +8,7 @@ body {
 }
 
 .article-title, .article-body {
-  padding-left: 0.7em;
+  //padding-left: 0.7em;
 
 }
 
@@ -24,4 +24,13 @@ body {
 
 #new-article-btn {
   margin-bottom: 10px;
+}
+
+#article-date {
+  margin-bottom: 40px;
+}
+
+.article-detail-title {
+  font-size: 4em;
+  margin-bottom: 40px;
 }

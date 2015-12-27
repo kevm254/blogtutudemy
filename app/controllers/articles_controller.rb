@@ -36,6 +36,16 @@ class ArticlesController < ApplicationController
       flash.now[:danger] = 'Article has not been updated'
       render :edit
     end
+
+    def destroy
+      @article = Article.find(params[:id])
+      if @article.destroy
+        flash[:success] = 'Article has been deleted'
+        redirect_to articles_path
+      else
+        flash[:danger] = 'Article was unable to be deleted'
+      end
+    end
   end
 
   private
